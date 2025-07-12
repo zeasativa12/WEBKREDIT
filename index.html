@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT XYZ - Pembiayaan Mobil & Motor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background: #001f3f;
+      color: #fff;
+      padding: 1rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header nav a {
+      color: #fff;
+      margin: 0 0.5rem;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      filter: brightness(0.6);
+      display: block;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      width: 90%;
+    }
+
+    .hero-overlay h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-overlay button {
+      background: #FF851B;
+      border: none;
+      padding: 1rem 2rem;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #001f3f;
+    }
+
+    .features,
+    .products,
+    .support {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .feature-card,
+    .product-card,
+    .support-card {
+      flex: 1 1 250px;
+      background: #f5f5f5;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .feature-card img,
+    .product-card img,
+    .support-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    form.simulator {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+      gap: 0.5rem;
+      background: #f5f5f5;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    form.simulator input,
+    form.simulator select,
+    form.simulator button {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    footer {
+      background: #001f3f;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    @media (max-width: 700px) {
+      .features,
+      .products,
+      .support {
+        flex-direction: column;
+      }
+
+      .hero img {
+        height: 300px;
+      }
+
+      .hero-overlay h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo"><strong>PT XYZ</strong></div>
+      <div>
+        <a href="#produk">Produk</a>
+        <a href="#simulasi">Simulasi</a>
+        <a href="#karir">Karir</a>
+        <a href="#dukungan">Dukungan</a>
+        <a href="#login">Login</a>
+        <select>
+          <option>ID</option>
+          <option>EN</option>
+        </select>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="hero.jpg" />
+    <div class="hero-overlay">
+      <h1>Simulasikan Pinjaman Kendaraan Anda</h1>
+      <p>Proses Mudah • Bunga Kompetitif • Aman & Terpercaya</p>
+      <button>Simulasikan Sekarang</button>
+    </div>
+  </section>
+
+  <!-- Keunggulan -->
+  <section class="section">
+    <h2>Keunggulan Kami</h2>
+    <div class="features">
+      <div class="feature-card">
+        <img src="delivery process.jpeg">
+        <h3>Proses Cepat</h3>
+        <p>Pengajuan online hanya dalam beberapa langkah.</p>
+      </div>
+      <div class="feature-card">
+        <img src="bunga.jpeg">
+        <h3>Bunga Kompetitif</h3>
+        <p>Skema pembiayaan yang fleksibel & terjangkau.</p>
+      </div>
+      <div class="feature-card">
+        <img src="data.jpeg">
+        <h3>Keamanan Data</h3>
+        <p>Enkripsi & perlindungan privasi tingkat tinggi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produk Unggulan -->
+  <section id="produk" class="section">
+    <h2>Produk Unggulan</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="mobil.jpeg">
+        <h3>Pinjaman Mobil</h3>
+        <p>Dapatkan mobil impian dengan cicilan ringan. Ajukan sekarang!</p>
+        <button>Info & Simulasi</button>
+      </div>
+      <div class="product-card">
+        <img src="motor.jpeg">
+        <h3>Pinjaman Motor</h3>
+        <p>Kredit motor cepat dan mudah, tenor fleksibel sesuai kebutuhan.</p>
+        <button>Info & Simulasi</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simulasi -->
+  <section id="simulasi" class="section">
+    <h2>Simulasi Cepat</h2>
+    <form class="simulator">
+      <label for="kendaraan">Jenis Kendaraan</label>
+      <select id="kendaraan">
+        <option>Mobil</option>
+        <option>Motor</option>
+      </select>
+      <input type="number" placeholder="Harga OTR (Rp)" />
+      <input type="number" placeholder="DP (Rp)" />
+      <input type="number" placeholder="Tenor (bulan)" />
+      <button type="submit">Hitung Cicilan</button>
+    </form>
+  </section>
+
+  <!-- Dukungan Pelanggan -->
+  <section id="dukungan" class="section">
+    <h2>Dukungan Pelanggan</h2>
+    <div class="support">
+      <div class="support-card">
+        <img src="faq.jpeg">
+        <h3>FAQ</h3>
+        <p>Temukan jawaban cepat atas pertanyaan umum Anda.</p>
+        <button>Lihat FAQ</button>
+      </div>
+      <div class="support-card">
+        <img src="kontak.jpeg">
+        <h3>Kontak Kami</h3>
+        <p>Butuh bantuan? Kirim pertanyaan atau keluhan melalui formulir kami.</p>
+        <button>Hubungi Kami</button>
+      </div>
+      <div class="support-card">
+        <img src="livechat.jpeg">
+        <h3>Live Chat</h3>
+        <p>Dapatkan bantuan real-time dari tim kami.</p>
+        <button>Mulai Chat</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 PT XYZ. Semua hak cipta dilindungi. | <a href="#">Syarat & Ketentuan</a> | <a href="#">Kebijakan Privasi</a></p>
+    <p>Ikuti kami di: 
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">LinkedIn</a>
+    </p>
+  </footer>
+</body>
+</html>
